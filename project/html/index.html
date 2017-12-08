@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="username"><b>Имя</b> (только латинские или русские буквы без пробелов)</label>
+                <input class="form-control" id="username" placeholder="Введите имя" autocomplete="off">
+                <div class="invalid-feedback-username"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" id="email" placeholder="example@mail.ru">
+                <div class="invalid-feedback-email"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input class="form-control" id="phone" placeholder="+7 (999) 999-9999">
+                <div class="invalid-feedback-phone"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="text">Произвольный текст</label>
+                <textarea class="form-control" id="text" rows="3"></textarea>
+                <div class="invalid-feedback-text"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+
+            <!-- <div w3-include-html="content.html"></div> -->
+
+        </form>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="../js/validation.js"></script>
+<script src="../js/myjs.js"></script>
+
+</html>
